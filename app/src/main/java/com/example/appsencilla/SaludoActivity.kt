@@ -1,9 +1,11 @@
 package com.example.appsencilla
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 // Importamos TextView para manejar el mensaje de saludo
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class SaludoActivity : AppCompatActivity() {
 
@@ -21,5 +23,6 @@ class SaludoActivity : AppCompatActivity() {
 
         //Construimos el mensaje a mostrar
         txtSaludo.text = "Hola $saludo"
+
     }
 }
