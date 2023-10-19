@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 class SaludoActivity : AppCompatActivity() {
 
     private lateinit var txtSaludo : TextView
+    private lateinit var btnAtras : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +24,14 @@ class SaludoActivity : AppCompatActivity() {
 
         //Construimos el mensaje a mostrar
         txtSaludo.text = "Hola $saludo"
+
+        btnAtras = findViewById(R.id.btnAtras)
+        btnAtras.setOnClickListener {
+            //Creamos el Intent
+            val intent = Intent(this@SaludoActivity, MainActivity::class.java)
+            //Iniciamos la nueva actividad
+            startActivity(intent)
+        }
 
     }
 }

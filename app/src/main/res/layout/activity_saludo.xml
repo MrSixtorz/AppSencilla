@@ -5,12 +5,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView android:id="@+id/txtSaludo"
+    <TextView
+        android:id="@+id/txtSaludo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="36sp"
-        android:textColor="#FD3004"
+        android:layout_height="200sp"
         android:gravity="center"
-        android:text="" />
+        android:text=""
+        android:textColor="#FD3004"
+        android:textSize="36sp" />
+
+    <Button android:id="@+id/btnAtras"
+        android:layout_width="150sp"
+        android:layout_height="75sp"
+        android:textSize="24sp"
+        android:text="ATRAS" />
 
 </LinearLayout>
